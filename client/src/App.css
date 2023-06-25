@@ -1,0 +1,326 @@
+body {
+  background: rgb(30, 0, 70);
+  background: linear-gradient(
+    146deg,
+    rgba(30, 0, 70, 1) 0%,
+    rgba(73, 0, 0, 1) 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h1 {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+  top: 10px;
+  text-align: center;
+}
+
+/* Home Button */
+
+.homeButtonBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 20px !important;
+  z-index: 2;
+}
+
+.homeButtonIcon {
+  position: absolute;
+  transform: translate(-15px, -15px);
+  height: 1.8em !important;
+  width: 1.8em !important;
+  margin: 20px;
+}
+
+/* Gradient Button */
+
+.gradientButton {
+  border-radius: 6px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(
+    146deg,
+    rgba(30, 0, 70, 1) 0%,
+    rgba(73, 0, 0, 1) 100%
+  );
+  box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.gradientButton:hover {
+  transform: scale(1.05);
+}
+
+/* Homepage */
+
+.homeLinkContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.homeLinkBox {
+  width: 300px;
+  vertical-align: middle;
+  line-height: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: rgb(85, 26, 139);
+}
+
+.homeLinkBox:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+}
+
+.homeLink {
+  text-decoration: none;
+  margin: 20px;
+}
+
+.creditsContainer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+/* Card Creator */
+
+.cardCreatorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  width: 700px;
+}
+
+.cardCreatorForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cardCreatorField {
+  min-width: 48% !important;
+  margin: 6px !important;
+}
+
+.cardCreatorButtonSubmit {
+  margin: auto;
+  margin-top: 10px;
+  height: 50px;
+  width: 150px;
+  padding: 0 30px;
+}
+
+/* Card List */
+
+.cardListcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  padding: 10px 50px;
+}
+
+.cardContainer {
+  width: 250px;
+  margin: 20px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.cardTitle {
+  font-size: 1.2rem !important;
+}
+
+.cardReduction {
+  margin-top: 10px !important;
+}
+
+.cardReductionNumber,
+.cardPriceNumber,
+.cardQuantityNumber {
+  font-weight: bold;
+}
+
+.cardFooter {
+  width: 100%;
+  padding: 0 !important;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cardInputQuantity {
+  width: 80px;
+}
+
+.cardPriceNumberTypography {
+  display: inline;
+  float: right;
+  padding-top: 18px;
+}
+
+.cardButton {
+  height: 40px;
+  width: 110px;
+}
+
+/* Popups */
+.popup {
+  width: 350px;
+}
+
+.popupUnitPrice {
+  display: inline;
+  float: right;
+  padding-top: 18px;
+}
+
+.popupPriceNumber {
+  font-weight: bold;
+}
+
+.popupInputsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.popupInput {
+  width: 45% !important;
+}
+
+.popupInput25 {
+  width: 25% !important;
+}
+
+.popupInput65 {
+  width: 65% !important;
+}
+
+.popupPriceNumberTypography {
+  display: inline;
+  float: right;
+  padding-top: 18px;
+}
+
+.popupConfirmButton {
+  margin: 0 auto 15px;
+  height: 40px;
+  width: 150px;
+}
+
+/* Buy Ticket */
+
+.buyOptionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.buyOptionBox {
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  height: 170px;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 300ms;
+}
+.buyOptionBox:hover {
+  transform: scale(1.05);
+}
+.buyOptionBoxSelected {
+  color: white;
+  background: linear-gradient(
+    146deg,
+    rgba(30, 0, 70, 1) 0%,
+    rgba(73, 0, 0, 1) 100%
+  );
+}
+.buyOptionIcon {
+  height: fit-content !important;
+  width: fit-content !important;
+  margin: 0 auto;
+}
+.buyOptionText {
+  line-height: 0 !important; /* sorry */
+  font-size: 18px !important;
+}
+.buyTicketOriginalPrice {
+  text-decoration: line-through;
+}
+.buyTicketNewPrice {
+  font-weight: bold;
+}
+.buyTicketDiscount {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+.buyQuantityContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  width: 30%;
+}
+
+/* User Ticket list */
+
+.ticketListcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 50px;
+  text-align: center;
+}
+.userTicketContainer {
+  width: 250px;
+  margin: 20px;
+  position: relative;
+}
+
+.userTicketIcon {
+  height: 150px !important;
+  width: 150px !important;
+}
